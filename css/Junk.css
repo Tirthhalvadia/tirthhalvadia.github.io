@@ -1,0 +1,227 @@
+#education-experience {
+    padding-top: var(--vspace-6);
+    padding-bottom: var(--vspace-6);
+    background-color: var(--color-1-lightest); /* Or any desired background color */
+    color: var(--color-text);
+}
+
+.education-entry, .experience-entry {
+    margin-bottom: var(--vspace-1); /* Add spacing between entries */
+}
+
+.education-entry h3, .experience-entry h3 {
+    color: var(--color-heading); /* Or any desired heading color */
+}
+
+/* Add margin-bottom to the Education section */
+#education .grid-section-split__primary {
+	margin-bottom: 2rem; /* Adjust the value as needed */
+  }
+  
+  /* Alternatively, add margin-top to the Experience section */
+  #experience .grid-section-split__primary {
+	margin-top: 2rem; /* Adjust the value as needed */
+  }
+
+
+
+
+
+/* BELOW WHOLE CSS CODE IS FOR FUTURE REFERENCE IF YOU NEED TO ADD ANY DETAILS IN EDUCATION AND EXPERIENCES */
+
+  /* Education & Experience Section Styling */
+#education-experience {
+    padding: 60px 0;
+    background-color: var(--color-3);
+    font-family: 'Roboto', sans-serif;
+    color: var(--color-text);
+    overflow: hidden;
+}
+
+/* Fade-In Animation */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Slide-In Animation */
+@keyframes slideIn {
+    from {
+        opacity: 0;
+        transform: translateX(-20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+/* Section Labels Styling */
+#education-experience .section-label {
+    margin-bottom: 20px;
+    animation: fadeIn 1s ease-out;
+}
+
+#education-experience .section-label .text-pretitle {
+    font-size: 18px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    color: var(--color-1-dark);
+    margin-bottom: 5px;
+}
+
+/* Education & Experience Entries Styling */
+#education-experience .education-entry, 
+#education-experience .education-experience {
+    background-color: var(--color-gray-1);
+    border-left: 4px solid var(--color-1);
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: var(--border-radius);
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    animation: slideIn 1s ease-out;
+}
+
+/* Header Animation */
+#education-experience .section-header {
+    animation: fadeIn 1s ease-out;
+}
+
+/* Entry Titles Styling */
+#education-experience .education-entry h3, 
+#education-experience .education-experience h3 {
+    font-size: 24px;
+    font-weight: 600;
+    color: var(--color-2);
+    margin: 0 0 10px;
+}
+
+/* Entry Paragraph Styling */
+#education-experience .education-entry p, 
+#education-experience .education-experience p {
+    font-size: 16px;
+    color: var(--color-text-light);
+    margin: 5px 0;
+}
+
+/* Hover Effect for Entries */
+#education-experience .education-entry:hover, 
+#education-experience .education-experience:hover {
+    background-color: var(--color-3-light);
+    border-left-color: var(--color-1-darker);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+    transition: all 0.3s ease-in-out;
+    transform: scale(1.02);
+}
+
+/* Responsive Styling */
+@media screen and (max-width: 768px) {
+    #education-experience .column {
+        flex: 0 0 100%;
+        max-width: 100%;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Popup Dialog Styling  For future reference*/
+dialog {
+    border: none;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    border-radius: 12px;
+    padding: 20px;
+    width: 90%;
+    max-width: 600px;
+    margin: auto;
+}
+
+dialog::backdrop {
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+.popup-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.popup-content p {
+    margin-bottom: 20px;
+}
+
+
+
+.btn-close {
+    background-color: var(--color-2);
+    color: var(--color-white);
+}
+
+.btn-close:hover {
+    background-color: var(--color-2-lighter);
+}
+
+.btn-github {
+    background-color: var(--color-1);
+    color: var(--color-2-dark);
+    text-decoration: none;
+}
+
+.btn-github:hover {
+    background-color: var(--color-1-light);
+    color: var(--color-2-dark);
+}
+
+@keyframes slideIn {
+    from {
+        transform: translateX(-20px);
+        opacity: 0;
+    }
+    to {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+/* Responsive Styling */
+@media (max-width: 768px) {
+    dialog {
+        width: 90%;
+        padding: 10px;
+        border-radius: 10px;
+    }
+    
+    .btn {
+        padding: 8px 16px;
+        font-size: 14px;
+    }
+}
