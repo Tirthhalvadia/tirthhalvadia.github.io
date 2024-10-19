@@ -2,6 +2,16 @@
 <html lang="en" class="no-js" >
 <head>
 
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-W02BERSTV2"></script>
+    <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'G-W02BERSTV2');
+    </script>
+
     <!--- basic page needs
     ================================================== -->
     <meta charset="utf-8">
@@ -258,12 +268,12 @@
                     <div class="grid-list-items__item list-items__item">
                         <div class="grid-list-items__title list-items__item-header">
                             <h3 class="list-items__item-title">
-                                <a href="https://github.com/Tirthhalvadia/Hexadecimal-to-7-segment-display" class="list-items__item-title">Synthesis and Implementation of Hexadecimal to 7 Segment Display</a>
+                                <a href="https://github.com/Tirthhalvadia/UART-Communication-System" class="list-items__item-title">UART Communication System on FPGA</a>
                             </h3>
                         </div>
                         <div class="grid-list-items__text list-items__item-text">
                             <p>
-                                This project focused on designing a Verilog model capable of processing hexadecimal inputs and displaying them on a 7-segment display. The design was implemented on the ZedBoard Zynq Evaluation and Development Kit using Xilinx Vivado for simulation, synthesis, and bitstream generation.
+                                This project implements a complete UART (Universal Asynchronous Receiver-Transmitter) communication system in Verilog, deployed on the ZedBoard Zynq Evaluation and Development Kit (xc7z020clg484-1). It features configurable baud rates and data widths, with error detection using parity bits. The design, verified through simulation and synthesized using Xilinx Vivado, achieves a clock period of 4ns (250MHz) for both the transmitter and receiver modules, with positive timing slack. The project has been implemented in hardware, with bitstreams generated for both the tx and rx modules.
                             </p>
                         </div>
                     </div>
